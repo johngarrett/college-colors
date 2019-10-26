@@ -9,7 +9,7 @@ def write_json(acronym, primary_color, secondary_color, alliases):
         }
     }
 
-    with open("data.json", "w") as write_file:
+    with open(f'{acronym}.json', 'w') as write_file:
         json.dump(data, write_file);
 
 if __name__ == '__main__':
